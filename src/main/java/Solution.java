@@ -3,44 +3,44 @@ public class Solution {
     /**
      * return the sum of a and b.
      */
-    public int add(int a, int b) {
+    public int add(int a,int b) {
         //replace 0  with your implementation
-        return 0;
+        return a+b;
         //throw new UnsupportedOperationException("Not implemented yet");
     }
 
     /**
      * return the difference of a and b.
      */
-    public int subtract(int a, int b) {
+    public int subtract(int a,int b) {
         // replace 0  with your implementation
-        return 0;
+        return a-b;
         //throw new UnsupportedOperationException("Not implemented yet");
     }
 
     /**
      * return the product of a and b.
      */
-    public int multiply (int a, int b){
+    public int multiply(int a, int b){
         // replace 0  with your implementation
-        return 0;
+        return a*b;
     }
 
     /**
      * return the quotient of a and b.
      */
 
-    public double divide (int a, int b){
+    public double divide(int a, int b){
         // replace 0.0  with your implementation
-        return 0;
+        return (a * 1.0/b);
     }
 
     /**
      * return the string concatenation of word1 and word2 
      */
-    public String concatenate (String word1, String word2){
+    public String concatenate(String word1, String word2){
         // replace ""  with your implementation
-        return "";
+        return word1 + word2;
     }
 
 
@@ -52,15 +52,19 @@ public class Solution {
      * Return x.
  */
     public int transform(int a) {
+        int x = a;
+        x += 4;
+        x *= 3;
+        x -= a;
         // replace 0 with your implementation
-        return 0;
+        return x;
     }
 
     public static void main(String[] args) {
         //this main method is for manually debugging
         Solution solution = new Solution();
                         //change "solution" method to any of the methods you would like to test
-        System.out.println(solution.add(1, 2));
-
+        System.out.println(solution.concatenate("cat", "dog"));
+        
     }
 }
